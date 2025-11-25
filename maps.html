@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/maps.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Favorite Places Map</title>
+
+  <script src="js/main.js" defer></script>
+
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AlzaSyBM1F-BpX66OSBK3-Vw9O9f7AEvTAIH8rI&callback=initMap">
+  </script>
+</head>
+<body class="map-page">
+  <div id="page-wrapper">
+    <header id="header">
+      <h1>My Chicago Map</h1>
+      <h3>Some of my favorite places</h3>
+    </header>
+
+    <nav id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">HomePage</a></li>
+        <li><a href="resume.html">My Resume</a></li>
+        <li><a href="hobby.html">Favorite Hobby</a></li>
+        <li><a href="maps.html" aria-current="page">Map</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section aria-labelledby="map-heading">
+        <h2 id="map-heading">Places that matter to me</h2>
+        <p>
+          This map highlights a few locations that are important in my life:
+          Illinois Institute of Technology, Montrose Beach where I like to run,
+          and downtown Chicago.
+        </p>
+
+        <div id="map" class="map-container"></div>
+      </section>
+
+      <section aria-labelledby="questions-heading">
+        <h2 id="questions-heading">Questions?</h2>
+        <p>If you have any questions about my site or these locations, click the button below.</p>
+        <button id="question-btn" type="button">Questions? Click here</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Giovanni Quizhpi</p>
+    </footer>
+  </div>
+</body>
+</html>
